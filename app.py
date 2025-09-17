@@ -32,4 +32,6 @@ print(f"{klic.get("name")}")
 
 drzave=klic.get("country")
 for d in drzave:
-    print(d)
+    print(d.get("country_id"))
+    print(d.get("probability"))
+#lepsi odgovor
