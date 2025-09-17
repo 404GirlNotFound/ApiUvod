@@ -34,4 +34,4 @@ drzave=klic.get("country")
 for d in drzave:
     print(d.get("country_id"))
     print(d.get("probability"))
-#lepsi odgovor
+#popravite izpise, da bo lepši in v %
