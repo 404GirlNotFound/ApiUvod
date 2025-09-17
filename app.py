@@ -19,7 +19,7 @@ for i in range(10):
     #pprint.pprint(js)
     print(js.get("value"))
 """
-
+"""
 baseUrl = "https://api.nationalize.io/?name="
 ime="luka"
 
@@ -35,3 +35,7 @@ for d in drzave:
     print(d.get("country_id"))
     print(d.get("probability"))
 #popravite izpise, da bo lepši in v %
+"""
+baseUrl="https://meowfacts.herokuapp.com/"
+klic=requests.get(baseUrl).json()
+print(klic.get("data"))
