@@ -36,6 +36,7 @@ for d in drzave:
     print(d.get("probability"))
 #popravite izpise, da bo lepši in v %
 """
+#sama nrdila in dela
 baseUrl="https://meowfacts.herokuapp.com/"
 klic=requests.get(baseUrl).json()
 print(klic.get("data"))
