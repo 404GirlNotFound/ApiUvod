@@ -9,7 +9,7 @@ baseUrl = "https://www.google.com/"
 
 #print(klic) #koda odgovora
 #print(klic.text) #raw odgovor - t
-
+"""
 #API klic z JASON odgovorom
 baseUrl = "https://api.chucknorris.io/jokes/random"
 for i in range(10):
@@ -18,3 +18,18 @@ for i in range(10):
     js = klic.json() #pretvorimo v dict
     #pprint.pprint(js)
     print(js.get("value"))
+"""
+
+baseUrl = "https://api.nationalize.io/?name="
+ime="luka"
+
+klic= requests.get(baseUrl+ime).json()
+#print(klic.url)
+#print(klic)
+
+print(f"{klic.get("count")}")
+print(f"{klic.get("name")}")
+
+drzave=klic.get("country")
+for d in drzave:
+    print(d)
